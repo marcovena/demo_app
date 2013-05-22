@@ -1,12 +1,11 @@
 <% provide(:title, 'AwesHome')%>
-<!DOCTYPE html>
-<head>
-	<title><%= full_title(yield(:title)) %></title>
-</head>
 
-<body>
-	<h1>This is a sample app I'm creating with Rails</h1>
-<p>Find me at <a href=" http://railstutorial.org">Ruby on Rails tutorial</a></p> 
-</body>
-</html>
+<div class="hero-unit center">
+	<h1>Welcome to Moneylove</h1>
+	<h2>MoneyLove is the new wonderful application to track your expenses.</h2>
+
+	<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png", alt: 'Rails' ), 'http://rubyonrails.org/' %>
+
 

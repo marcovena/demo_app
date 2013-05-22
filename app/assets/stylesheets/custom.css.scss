@@ -1,0 +1,84 @@
+@import "bootstrap";
+
+/************* $VARIABLES */
+$grayMediumLight: #eaeaea;
+
+
+/* UNIVERSAL */
+
+h1,h2,h3,h4,h5,h6 { line-height: 1;}
+
+h2{
+	color: $grayLight;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+p {font-size: 1.7em;}
+
+html {
+	overflow-y: scroll;
+}
+
+a:visited {
+	color:red;
+}
+.center{
+	text-align: center;
+
+
+	h1 {
+		margin-bottom: 10px;
+		}
+}
+
+.center h2 {
+	font-size: 1em;
+	
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: red;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+/* CUSTOM */
+#logo {
+float: left;
+margin-right: 10px;
+font-size: 1.7em;
+color: #EEE;
+letter-spacing: -1px;
+padding-top: 9px;
+font-weight: bold;
+line-height: 1;
+	&:hover{
+	color: #FFF;
+	text-decoration: none;
+	}
+}
+
+
+/* Footer */
+.footer {
+margin-top: 45px;
+padding-top: 5px;
+border-top: 1px solid $grayMediumLight;
+color: $gray;
+	a { color: $grayLight;
+		&:hover {color: $grayDarker;}
+	}
+	ul {float:right; list-style: none;
+		li{
+			float:left;
+			margin-left: 10px;
+			}
+		}
+}
+

@@ -1,0 +1,699 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"li",
+				"grayLight"
+			],
+			[
+				"gra",
+				"grayLight"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mi",
+				"min	min { |a, b| .. }"
+			],
+			[
+				"video",
+				"video"
+			],
+			[
+				"f",
+				"section.f"
+			],
+			[
+				"span",
+				"span"
+			],
+			[
+				"border",
+				"border: border-top-width: size"
+			],
+			[
+				"back",
+				"background: background-color: hex"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"none",
+				"none"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"wei",
+				"weight"
+			],
+			[
+				"line",
+				"outline"
+			],
+			[
+				"corn",
+				"corner"
+			],
+			[
+				"ali",
+				"align"
+			],
+			[
+				"text",
+				"text: text-align: left/center/right"
+			],
+			[
+				"bod",
+				"body"
+			],
+			[
+				"ub",
+				"submenu"
+			],
+			[
+				"nav",
+				"navMenuItems"
+			],
+			[
+				"ta",
+				"tab_header"
+			],
+			[
+				"mod",
+				"modules"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"my",
+				"mylist"
+			],
+			[
+				"it",
+				"itemsToAdd"
+			],
+			[
+				"al",
+				"altImg"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"hi",
+				"hiddenElements"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/static_pages/home.html.erb",
+			"settings":
+			{
+				"buffer_size": 343,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_header.html.erb",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/custom.css.scss",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 333,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/model/user_spec.rb",
+			"settings":
+			{
+				"buffer_size": 79,
+				"line_ending": "Unix",
+				"name": "require"
+			}
+		},
+		{
+			"file": "config/database.yml",
+			"settings":
+			{
+				"buffer_size": 674,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"er",
+				"Snippet: end (ERB)"
+			],
+			[
+				"snippet erb",
+				"Snippet: end (ERB)"
+			],
+			[
+				"sni",
+				"Snippet: end (ERB)"
+			],
+			[
+				"",
+				"Snippet: link_to (controller, action)"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"line",
+				"Snippet: font: style variant weight size/line-height font-family"
+			],
+			[
+				"back",
+				"Snippet: background-color: name"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"session",
+				"Set Syntax: Regular Expression"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 115.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_footer.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/application_helper.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/about.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/help.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/user_pages_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/routes.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/contact.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/static_pages_controller.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/bootstrap.css",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/Gemfile",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/.gitignore",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/javascripts/_bootstrap.js",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/database.yml",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/seeds.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/static_pages_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/home.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/spec_helper.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/public/hello.html",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/images/rails.png",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/tmp/pids/server.pid",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/first_app/first_app/Gemfile",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/marco/Downloads/aMule-AdunanzA-2012.1-2.3.1-ppc-i386/LEGGIMI.AdunanzA",
+		"/Users/marco/Dropbox/Blog Post Archive/non e' mai troppo tardi per imparare a programmare.txt",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"xml",
+			":visited",
+			":hover",
+			"eaeaea",
+			"$grayMediumLight",
+			"eaea",
+			"lightgray",
+			"&",
+			"#999",
+			";",
+			"fd\n",
+			" \n",
+			"\n",
+			"df",
+			"appreciatedcxvcxvf",
+			"hover",
+			"header",
+			"<",
+			"mylist",
+			"slidesho",
+			"alt",
+			"list",
+			"giuda"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"grayLight",
+			",",
+			",\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/static_pages/home.html.erb",
+					"settings":
+					{
+						"buffer_size": 343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								214,
+								214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/_header.html.erb",
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/users/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								32
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/custom.css.scss",
+					"settings":
+					{
+						"buffer_size": 951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								250,
+								250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/user.rb",
+					"settings":
+					{
+						"buffer_size": 333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spec/model/user_spec.rb",
+					"settings":
+					{
+						"buffer_size": 79,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"auto_name": "require",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "config/database.yml",
+					"settings":
+					{
+						"buffer_size": 674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"<html>"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

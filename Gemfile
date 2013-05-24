@@ -23,3 +23,7 @@ end
 group :development, :test do
   gem 'rspec-rails', '>=2.0.0.beta'
 end
+
+group :development do
+  gem 'annotate', '2.5.0'
+end

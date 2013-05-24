@@ -11,6 +11,10 @@
 
 class User < ActiveRecord::Base
   attr_accessible :email, :name
-  has_many :microposts
+
+#can't be null fields  
+  validates :name, presence: true , length: {maximum: 50 }
+  validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
+                    uniqueness: { case_sensitive: false }
 
 end

@@ -16,7 +16,7 @@
 
  test:
   adapter: postgresql
-  host:localhost
+  host: localhost
   database: dbdemo
   username: marco
 

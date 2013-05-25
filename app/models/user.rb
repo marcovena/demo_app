@@ -16,5 +16,5 @@ class User < ActiveRecord::Base
   validates :name, presence: true , length: {maximum: 50 }
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
-
+ before_save { |user| user.email = email.downcase }
 end

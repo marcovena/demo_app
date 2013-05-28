@@ -2,8 +2,12 @@
 
 /************* $VARIABLES */
 $grayMediumLight: #eaeaea;
-
-
+/************* $mixins */
+@mixin box_sizing{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 /* UNIVERSAL */
 
 body{
@@ -84,5 +88,5 @@ color: $gray;
   float: left;
   width: 100%;
   margin-top: 45px;
-  //@.include box_sizing;
+  @include box_sizing;
 }

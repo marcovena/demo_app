@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"do",
+				"do"
+			],
+			[
 				"marg",
 				"margin-top"
 			],
@@ -152,10 +156,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/static_pages/home.html.erb",
+			"file": "app/assets/stylesheets/custom.css.scss",
 			"settings":
 			{
-				"buffer_size": 343,
+				"buffer_size": 1126,
 				"line_ending": "Unix"
 			}
 		},
@@ -163,39 +167,23 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 351,
+				"buffer_size": 398,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_header.html.erb",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 390,
+				"buffer_size": 2043,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/new.html.erb",
+			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 97,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/custom.css.scss",
-			"settings":
-			{
-				"buffer_size": 951,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 493,
+				"buffer_size": 122,
 				"line_ending": "Unix"
 			}
 		},
@@ -203,24 +191,18 @@
 			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 333,
+				"buffer_size": 784,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/model/user_spec.rb",
+			"contents": "<% provide (:title, @user.name) %> \n\n\n <%= @user.name %>\n\n\n<p>\n  <b>Email:</b>\n  <%= @user.email %>\n</p>\n\n\n# <%= link_to 'Edit', edit_user_path(@user) %> |\n# <%= link_to 'Back', users_path %>\n",
+			"file": "app/views/users/show.html.erb",
+			"file_size": 214,
+			"file_write_time": 1369753953000000,
 			"settings":
 			{
-				"buffer_size": 79,
-				"line_ending": "Unix",
-				"name": "require"
-			}
-		},
-		{
-			"file": "config/database.yml",
-			"settings":
-			{
-				"buffer_size": 674,
+				"buffer_size": 192,
 				"line_ending": "Unix"
 			}
 		}
@@ -231,6 +213,50 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"erb",
+				"ERB: Insert/Switch Block"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
 			[
 				"er",
 				"Snippet: end (ERB)"
@@ -246,10 +272,6 @@
 			[
 				"",
 				"Snippet: link_to (controller, action)"
-			],
-			[
-				"packa",
-				"Package Control: Install Package"
 			],
 			[
 				"user",
@@ -280,7 +302,7 @@
 				"Set Syntax: Regular Expression"
 			]
 		],
-		"width": 449.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -297,24 +319,32 @@
 	},
 	"file_history":
 	[
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/database.yml",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/user_pages_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/Gemfile",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/factories.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/models/user.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds_bak",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/migrate/20130524134322_add_index_to_users_email.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/model/user_spec.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/new.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_header.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/application.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/home.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_footer.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds.css.scss",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/application_helper.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/about.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/help.html.erb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/user_pages_spec.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/routes.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/contact.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/static_pages_controller.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/bootstrap.css",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/Gemfile",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/.gitignore",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/javascripts/_bootstrap.js",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/database.yml",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/seeds.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/static_pages_spec.rb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/home.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/spec_helper.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/public/hello.html",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/images/rails.png",
@@ -332,7 +362,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -342,6 +372,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"set_psql_env",
 			"xml",
 			":visited",
 			":hover",
@@ -385,31 +416,32 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/static_pages/home.html.erb",
+					"file": "app/assets/stylesheets/custom.css.scss",
 					"settings":
 					{
-						"buffer_size": 343,
+						"buffer_size": 1126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								152,
+								152
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1032.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -419,15 +451,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 351,
+						"buffer_size": 398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								372,
+								372
 							]
 						],
 						"settings":
@@ -442,24 +474,25 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/layouts/_header.html.erb",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 390,
+						"buffer_size": 2043,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								235,
-								235
+								287,
+								287
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -469,23 +502,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/users/new.html.erb",
+					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 97,
+						"buffer_size": 122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32,
-								32
+								111,
+								111
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -495,131 +528,49 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/assets/stylesheets/custom.css.scss",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 951,
+						"buffer_size": 784,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								250,
-								250
+								668,
+								668
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 234.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "Gemfile",
+					"file": "app/views/users/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 493,
+						"buffer_size": 192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								463,
-								463
+								39,
+								39
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/user.rb",
-					"settings":
-					{
-						"buffer_size": 333,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "spec/model/user_spec.rb",
-					"settings":
-					{
-						"buffer_size": 79,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								73
-							]
-						],
-						"settings":
-						{
-							"auto_name": "require",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "config/database.yml",
-					"settings":
-					{
-						"buffer_size": 674,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								345,
-								345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

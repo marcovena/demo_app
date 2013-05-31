@@ -176,22 +176,6 @@
 			}
 		},
 		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 398,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 385,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/layouts/_header.html.erb",
 			"settings":
 			{
@@ -214,21 +198,74 @@
 				"buffer_size": 282,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title><%= full_title(yield(:title)) %></title>\n	<%= stylesheet_link_tag    \"application\", :media => \"all\" %>\n	<%= javascript_include_tag \"application\" %>\n	<%= csrf_meta_tags %>\n</head>\n<%= render 'layouts/header' %>\n\n<div class=\"container\">\n	<% flash.each do |k,v| %>\n	<div class=\"alert alert-<%= k %>\"><%= v%></div>\n	<% end %>\n\n\n	<%= yield %>\n	<%= render 'layouts/footer' %>\n	<%= debug(params) if Rails.env.development? %>\n</div>\n\n\n</body>\n</html>\n",
+			"file": "app/views/layouts/application.html.erb",
+			"file_size": 481,
+			"file_write_time": 1370021834000000,
+			"settings":
+			{
+				"buffer_size": 481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEmmet:\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n  \n",
+			"settings":
+			{
+				"buffer_size": 1692,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 167.0,
 		"selected_items":
 		[
 			[
-				"ind",
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				":$ - EOF"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
 				"erb",
 				"ERB: Insert/Switch Block"
+			],
+			[
+				"rub",
+				"Snippet: <ruby>"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"ERB",
@@ -244,10 +281,6 @@
 			],
 			[
 				"inde",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"in",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -267,19 +300,7 @@
 				"Set Syntax: Sass"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
 				"Package Control: Install Package"
 			],
 			[
@@ -297,10 +318,6 @@
 			[
 				"sni",
 				"Snippet: end (ERB)"
-			],
-			[
-				"",
-				"Snippet: link_to (controller, action)"
 			],
 			[
 				"user",
@@ -331,7 +348,7 @@
 				"Set Syntax: Regular Expression"
 			]
 		],
-		"width": 530.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -348,6 +365,12 @@
 	},
 	"file_history":
 	[
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/users_controller.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/application.html.erb",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/BeautifyRuby/Default (OSX).sublime-keymap",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/BeautifyRuby/BeautifyRuby.sublime-settings",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/models/user.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/show.html.erb",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/mysnip",
@@ -364,7 +387,6 @@
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/custom.css.scss",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/new.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_header.html.erb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/application.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/home.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds.css.scss",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/application_helper.rb",
@@ -383,7 +405,6 @@
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/tmp/pids/server.pid",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/first_app/first_app/Gemfile",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/marco/Downloads/aMule-AdunanzA-2012.1-2.3.1-ppc-i386/LEGGIMI.AdunanzA",
 		"/Users/marco/Dropbox/Blog Post Archive/non e' mai troppo tardi per imparare a programmare.txt",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings"
@@ -454,7 +475,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -469,8 +490,8 @@
 						"selection":
 						[
 							[
-								1809,
-								1809
+								1471,
+								1471
 							]
 						],
 						"settings":
@@ -479,65 +500,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1925.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 398,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								228,
-								258
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 385,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								130,
-								130
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/views/layouts/_header.html.erb",
 					"settings":
 					{
@@ -564,7 +533,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "app/views/users/new.html.erb",
 					"settings":
 					{
@@ -581,7 +550,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -590,7 +560,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "app/views/shared/_error_messages.html.erb",
 					"settings":
 					{
@@ -611,6 +581,58 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 1692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1692,
+								1692
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 208.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

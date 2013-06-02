@@ -14,7 +14,7 @@ describe "Authentication" do
 			before do
 				fill_in "Email", with: user.name.upcase
 				fill_in "Password", with: user.password
-				click_button "Sign In"
+				click_button "Sign in"
 			end
 
 			it { should have_selector('title', text: user.name) }
@@ -22,14 +22,22 @@ describe "Authentication" do
 			it { should have_link('Sign Out', href: signout_path) }
 
 			it { should_not have_link('Sign In', href: signin_path) }
-		end
+			describe "after saving the user" do
+				it { should have_link('Sign out') }
+			end
 
-		describe "after visiting another page" do
-			before { click_link "Home" }
-			it { should_not have_selector('div.alert.alert-error') }
+			describe "followed by signout" do
+				before { click_link "Sign out" }
+				it { should have_link('Sign in') }
+			end
+
+			describe "after visiting another page" do
+				before { click_link "Home" }
+				it { should_not have_selector('div.alert.alert-error') }
+			end
 		end
 	end
-
-
-
 end
+
+
+

@@ -50,13 +50,13 @@ html {
 float: left;
 margin-right: 10px;
 font-size: 1.7em;
-color: #EDD;
-letter-spacing: -1px;
+color: $white;
+letter-spacing: 0.1em;
 padding-top: 9px;
 font-weight: bold;
 line-height: 1;
 	&:hover{
-	color: #FFF;
+	color: $blue;
 	text-decoration: none;
 	}
 }

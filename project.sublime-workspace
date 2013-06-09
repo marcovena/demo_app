@@ -5,7 +5,27 @@
 		[
 			[
 				"if",
-				"ife	if … else … end"
+				"ife	ERB if / else / end"
+			],
+			[
+				"re",
+				"remember_token"
+			],
+			[
+				"passw",
+				"password_confirmation"
+			],
+			[
+				"do",
+				"do"
+			],
+			[
+				"lab",
+				"label	<label>"
+			],
+			[
+				"def",
+				"def	def … end"
 			],
 			[
 				"n",
@@ -30,10 +50,6 @@
 			[
 				"border",
 				"border-top"
-			],
-			[
-				"do",
-				"do"
 			],
 			[
 				"li",
@@ -168,67 +184,83 @@
 	"buffers":
 	[
 		{
-			"file": "app/assets/stylesheets/custom.css.scss",
+			"file": "app/controllers/sessions_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1867,
+				"buffer_size": 421,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_header.html.erb",
+			"file": "app/views/users/edit.html.erb",
 			"settings":
 			{
-				"buffer_size": 391,
+				"buffer_size": 643,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/new.html.erb",
+			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 584,
+				"buffer_size": 1146,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/shared/_error_messages.html.erb",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 2197,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title><%= full_title(yield(:title)) %></title>\n	<%= stylesheet_link_tag    \"application\", :media => \"all\" %>\n	<%= javascript_include_tag \"application\" %>\n	<%= csrf_meta_tags %>\n</head>\n<%= render 'layouts/header' %>\n\n<div class=\"container\">\n	<% flash.each do |k,v| %>\n	<div class=\"alert alert-<%= k %>\"><%= v%></div>\n	<% end %>\n\n\n	<%= yield %>\n	<%= render 'layouts/footer' %>\n	<%= debug(params) if Rails.env.development? %>\n</div>\n\n\n</body>\n</html>\n",
-			"file": "app/views/layouts/application.html.erb",
-			"file_size": 481,
-			"file_write_time": 1370021834000000,
+			"file": "app/helpers/sessions_helper.rb",
 			"settings":
 			{
-				"buffer_size": 481,
+				"buffer_size": 629,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nEmmet:\n-----\n\n  Thank you for installing Emmet -- a toolkit that can greatly improve your workflow. Note that this plugin automatically downloads and installs PyV8 binary (see status bar message). \n  \n  ******************************\n  Please restart editor \n  to finish installation process \n  after PyV8 was downloaded.\n  ******************************\n  \n  Tab key handler\n  ==========================\n  \n  By default, Emmet allows you to expand abbreviations with Tab key in HTML, XML, HAML and CSS/SASS/LESS/Stylus documents. As a side effect, you can’t use some of your ST2 snippets.\n  \n  Please read https://github.com/sergeche/emmet-sublime#tab-key-handler about how Tab handler works and how to tweak its behavior to match your needs.\n  \n  Enter key\n  ==========================\n  \n  In HTML and XML documents, Emmet overrides Enter key to insert formatted line breaks between opening and closing tags. In some cases it will break character input (for example, in Japanese language).\n  \n  To disable Enter key handler, simply add the following option in your user's Preferences file:\n  \n  \"disable_formatted_linebreak\": true\n  \n  Actions shortcuts\n  ==========================\n  \n  Emmet has a number of actions with keyboard shortcuts that may override ones you're using commonly (for example, Ctrl-E or Ctrl-Down). Please read the project main page to get list of available actions and keyboard shortcuts and how to disable them:\n  https://github.com/sergeche/emmet-sublime\n  \n  Documentation and examples:\n  http://emmet.io\n  \n  ------------------------------\n  Follow me on Twitter: @emmetio\n  ------------------------------\n  \n",
+			"contents": "Searching 224 files for \"store_location\"\n\n/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/users_controller.rb:\n   50      def signed_in_user\n   51        if !signed_in?\n   52:         store_location\n   53        redirect_to signin_url, notice: \"Please sign in\"\n   54        end\n\n/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/sessions_helper.rb:\n   12  	session.delete\n   13  end\n   14: def store_location\n   15  	session[return_to:] = request.url\n   16  end\n\n2 matches across 2 files\n\n\nSearching 224 files for \"session[return_to:]\"\n\n/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/sessions_helper.rb:\n   13  end\n   14  def store_location\n   15: 	session[:return_to] = request.url\n   16  end\n   17  \n\n1 match in 1 file\n",
 			"settings":
 			{
-				"buffer_size": 1692,
+				"buffer_size": 775,
 				"line_ending": "Unix",
-				"name": "Package Control Messages",
+				"name": "Find Results",
 				"scratch": true
+			}
+		},
+		{
+			"contents": "<% provide(:title, 'All Users') %>\n<h1>Listing users</h1>\n\n<table class=\"table table-striped\">\n  <tr>\n    <th>Name</th>\n    <th>Email</th>\n    <th></th>\n    <th></th>\n    <th></th>\n  </tr>\n\n  <% @users.each do |user| %>\n  <tr>\n<%= gravatar_for user, size: 52 %>\n    <td><%= user.name %></td>\n    <td><%= user.email %></td>\n    <td><div class=\"btn-toolbar\">\n      <div class=\"btn-group\">\n        <a class=\"btn\" href=\"#\"><i class=\"icon-align-left\"></i></a>\n        <a class=\"btn\" href=\"#\"><i class=\"icon-align-center\"></i></a>\n        <a class=\"btn\" href=\"#\"><i class=\"icon-align-right\"></i></a>\n        <a class=\"btn\" href=\"#\"><i class=\"icon-align-justify\"></i></a>\n      </div>\n    </div></td>\n    <td><%= link_to 'Show', user %></td>\n    <td><%= link_to 'Edit', edit_user_path(user) %></td>\n    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>\n  </tr>\n  <% end %>\n</table>\n\n<br />\n",
+			"file": "app/views/users/index.html.erb",
+			"file_size": 891,
+			"file_write_time": 1370793347000000,
+			"settings":
+			{
+				"buffer_size": 926,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 167.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"inst",
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -236,8 +268,52 @@
 				"Indentation: Reindent Lines"
 			],
 			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"erb",
+				"BeautifyRuby"
+			],
+			[
+				"INDE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"HTML",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"link",
+				"Snippet: link_to (path)"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"git bran",
+				"Git: New Branch"
+			],
+			[
+				"MERGE",
+				"Git: Merge Branch"
+			],
+			[
+				"branc",
+				"Git: Change Branch"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
 				"",
-				":$ - EOF"
+				"BeautifyRuby"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
 			],
 			[
 				"upg",
@@ -252,22 +328,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"erb",
-				"ERB: Insert/Switch Block"
-			],
-			[
-				"rub",
-				"Snippet: <ruby>"
-			],
-			[
-				"ind",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"ERB",
 				"ERB: Insert/Switch Block"
 			],
@@ -280,16 +340,8 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"inde",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"indent",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"git stat",
@@ -348,7 +400,7 @@
 				"Set Syntax: Regular Expression"
 			]
 		],
-		"width": 449.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -365,16 +417,32 @@
 	},
 	"file_history":
 	[
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/authentication_pages_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/sessions_helper.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_header.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/routes.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/sessions/new.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/users_controller.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/show.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/static_pages_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/javascripts/application.js",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/sessions_controller.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/models/user.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/models/user_spec.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/tmp/cache/sass/fa3eb96a722e75e43a8c475e5fc70024ce61d526/static_pages.css.scssc",
+		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/migrate/20130601192447_add_remember_token_to_users.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/application_controller.rb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/application.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/shared/_error_messages.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/new.html.erb",
+		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/environments/production.rb",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/controllers/users_controller.rb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/application.html.erb",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/BeautifyRuby/Default (OSX).sublime-keymap",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/BeautifyRuby/BeautifyRuby.sublime-settings",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/models/user.rb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/show.html.erb",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/mysnip",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/config/routes.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_footer.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/user_pages_spec.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/users_helper.rb",
@@ -384,9 +452,6 @@
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds_bak",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/migrate/20130524134322_add_index_to_users_email.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/model/user_spec.rb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/custom.css.scss",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/users/new.html.erb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/layouts/_header.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/views/static_pages/home.html.erb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/stylesheets/scaffolds.css.scss",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/helpers/application_helper.rb",
@@ -398,13 +463,11 @@
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/.gitignore",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/javascripts/_bootstrap.js",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/db/seeds.rb",
-		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/requests/static_pages_spec.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/spec/spec_helper.rb",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/public/hello.html",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/app/assets/images/rails.png",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/demo_app/tmp/pids/server.pid",
 		"/Users/marco/Sites/RUBY/LEARNING/Playground/first_app/first_app/Gemfile",
-		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/marco/Downloads/aMule-AdunanzA-2012.1-2.3.1-ppc-i386/LEGGIMI.AdunanzA",
 		"/Users/marco/Dropbox/Blog Post Archive/non e' mai troppo tardi per imparare a programmare.txt",
 		"/Users/marco/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings"
@@ -415,9 +478,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -425,6 +489,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"session[return_to:]",
+			"store_location",
+			"root",
 			"do",
 			"logo",
 			"user",
@@ -475,28 +542,28 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/stylesheets/custom.css.scss",
+					"file": "app/controllers/sessions_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1867,
+						"buffer_size": 421,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1471,
-								1471
+								353,
+								353
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -507,18 +574,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/layouts/_header.html.erb",
+					"file": "app/views/users/edit.html.erb",
 					"settings":
 					{
-						"buffer_size": 391,
+						"buffer_size": 643,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								391,
-								391
+								205,
+								205
 							]
 						],
 						"settings":
@@ -534,50 +601,53 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/users/new.html.erb",
+					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 584,
+						"buffer_size": 1146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								209,
-								209
+								922,
+								922
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 429.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/shared/_error_messages.html.erb",
+					"file": "config/routes.rb",
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 2197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -587,23 +657,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/views/layouts/application.html.erb",
+					"file": "app/helpers/sessions_helper.rb",
 					"settings":
 					{
-						"buffer_size": 481,
+						"buffer_size": 629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								325,
-								325
+								281,
+								281
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -615,24 +686,77 @@
 					"buffer": 5,
 					"settings":
 					{
-						"buffer_size": 1692,
+						"buffer_size": 775,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										205,
+										219
+									],
+									[
+										430,
+										444
+									],
+									[
+										703,
+										722
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								715,
+								715
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/users/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 926,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1692,
-								1692
+								261,
+								261
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"word_wrap": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 208.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -675,6 +799,10 @@
 	{
 		"height": 112.0
 	},
+	"output.git":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
 		"height": 62.0
@@ -685,6 +813,74 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"hea",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"session",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"spec",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"auth",
+				"spec/requests/authentication_pages_spec.rb"
+			],
+			[
+				"sutom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"css",
+				"tmp/cache/sass/fa3eb96a722e75e43a8c475e5fc70024ce61d526/static_pages.css.scssc"
+			],
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"head",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"rememb",
+				"db/migrate/20130601192447_add_remember_token_to_users.rb"
+			],
+			[
+				"u",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"applica",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"envir",
+				"config/environments/production.rb"
+			],
 			[
 				"",
 				"<html>"

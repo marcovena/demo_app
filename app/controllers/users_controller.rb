@@ -56,12 +56,6 @@ def user_params
   params.require(user).permit(:name, :email, :password, :password_confirmation)
 end
 
-def signed_in_user
-  if !signed_in?
-    store_location
-    redirect_to signin_url, notice: "Please sign in"
-  end
-end
 
 def correct_user
   @user = User.find(params[:id])

@@ -2,12 +2,7 @@
 
 <div class="row">
 	<aside class="span4">
-		<section>
-			<h1>
-				<%= gravatar_for(@user) %>
-				<%= @user.name %>
-			</h1>
-		</section>
+		<%= render 'shared/user_info' %>
 	</aside>
 	<div class="span8">
 	 <% if @user.microposts.any? %>
@@ -22,6 +17,5 @@
 	 <% end %>
 	</div>
 </div>
-
 
 

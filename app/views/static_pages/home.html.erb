@@ -1,5 +1,7 @@
 <% provide(:title, 'AwesHome')%>
-
+<% if signed_in? %>
+	<%= render 'layouts/signed-in-home' %>
+<% else %>
 <div class="hero-unit center">
 	<h1>Welcome to Moneylove</h1>
 	<h2>MoneyLove is the new wonderful application to track your expenses.</h2>
@@ -8,4 +10,5 @@
 </div>
 <%= link_to image_tag("rails.png", alt: 'Rails' ), 'http://rubyonrails.org/' %>
 
+<% end %>
 

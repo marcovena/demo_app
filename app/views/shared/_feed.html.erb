@@ -1,0 +1,10 @@
+<% if @feed_items.any? %>
+	<ol class="microposts">
+		<%= render partial: 'shared/feed_item', collection: @feed_items %>
+	</ol>
+	<%= will_paginate @feed_items %>
+
+	
+<% else %>
+	<p id="no-posts" class="well">Sorry, there are no posts at the moment</p>	
+<% end %>

@@ -1,6 +1,9 @@
 class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
+  before_filter :signed_in_user
+
+
   def index
     @microposts = Micropost.all
 
@@ -39,7 +42,8 @@ class MicropostsController < ApplicationController
 
   # POST /microposts
   # POST /microposts.json
-  def create
+=begin
+def create
     @micropost = Micropost.new(params[:micropost])
 
     respond_to do |format|
@@ -52,6 +56,20 @@ class MicropostsController < ApplicationController
       end
     end
   end
+=end
+
+def create
+  @micropost = current_user.microposts.build(params[:micropost])
+  if @micropost.save
+    flash[:success] = "Micropost successfully created"
+    redirect_to root_url
+  else
+    flash[:error] = "Error creating micropost: #{@micropost.errors.full_messages}"
+    #render 'static_pages/home'
+    redirect_to root_url
+  end
+  
+end
 
   # PUT /microposts/1
   # PUT /microposts/1.json

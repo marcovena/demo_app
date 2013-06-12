@@ -1,4 +1,4 @@
-<!-- <h1>Listing microposts</h1>
+<h1>Listing microposts</h1>
 
 <table>
   <tr>
@@ -23,4 +23,3 @@
 <br />
 
 <%= link_to 'New Micropost', new_micropost_path %>
- -->

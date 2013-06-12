@@ -123,6 +123,7 @@ sidebar{
 .gravatar{
 	float:left;
 	margin-right: 10px;
+	@extend .img-polaroid;
 }
 
 /* Forms */
@@ -158,4 +159,10 @@ margin-top:40px;
 	}
 
 
+}
+
+// SHOW MICROPOSTS
+
+#no-posts{
+	margin-top: 20px;
 }

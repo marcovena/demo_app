@@ -191,10 +191,18 @@ h1.user-name-info{
 	margin-left: 0;
 	
 	li {
-		padding: 10px 3px 5px 10px;
+		padding: 8px 3px 5px 10px;
 		margin: 5px 0 0 0;
 		background-color: rgb(247, 247, 247);
 		border: 1px solid $grayLighter;
+		position: relative;
+
+		.delete-feed-item{
+			position: absolute;
+			right:0;
+			top: -6px;
+			
+		}
 		
 		
 		.feed-textual-part{
@@ -226,9 +234,10 @@ h1.user-name-info{
 			margin-right: -8px;
 			
 			position:relative;
-			max-width: 30%;
+			max-width: 40%;
+			white-space: no-wrap;
 
-			
+
 			&:after{
 				content: "";
 				width: 0; 

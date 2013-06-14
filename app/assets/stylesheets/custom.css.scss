@@ -259,11 +259,29 @@ h1.user-name-info{
 
 
 
-.new_micropost{
+.micropost-textbox{
+	position:relative;
+
+	#char-counter {
+		position: absolute;
+		bottom: 40px;
+		right: 10px;
+		color: rgba(170, 170, 170, 0.5);
+		font-size: 49pt;
+	}
+
 	textarea {
-		margin-top: 30px;
+		margin-top: 20px;
 		width:100%;
 		height: 200px;
+		position: relative;
+		
+		.char-counter {
+			
+			position: absolute;
+			bottom:0;
+			right:0;
+		}
 	}
 }
 

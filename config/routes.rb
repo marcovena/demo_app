@@ -20,6 +20,7 @@ DemoApp::Application.routes.draw do
     end
   end
   resources :sessions, only: [:new, :create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
 
   # The priority is based upon order of creation:

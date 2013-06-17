@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_filter :signed_in_user, only: [:index,:edit, :update, :destroy]
+before_filter :signed_in_user,
+                only: [:index, :edit, :update, :destroy, :following, :followers]
   before_filter :correct_user,   only: [:edit, :update]
   before_filter :admin_user,     only: :destroy
 
@@ -50,6 +51,21 @@ def destroy
   flash[:success] = "User removed"
   redirect_to users_url
 end
+
+
+#FOLLOWERS - FOLLOWING
+def followers
+  @user = User.find(params[:id])
+  @followers = @user.followers
+  @title = 'People following ' + @user.name
+end
+
+def following #followed_people
+  @user = User.find(params[:id])
+  @followed_users = @user.followed_users
+  @title = 'People followed by ' + @user.name
+end
+
 
 private
 def user_params

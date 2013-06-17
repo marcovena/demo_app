@@ -2,19 +2,12 @@
 
 <div class="row">
 	<aside class="span4">
-		<%= render 'shared/user_info' %>
+		<section><%= render 'shared/user_info', user:@user %></section>
+		<section><%= render 'shared/stats' %></section>
 	</aside>
 	<div class="span8">
-	 <% if @user.microposts.any? %>
-
-	 	<h3>Microposts (<%= @user.microposts.count %>)</h3>
-	 	<ol class="microposts">
-	 		<%= render @microposts %>
-	 	</ol>
-		<%= will_paginate @microposts %>
-		<% else %>
-		<p id="no-posts" class="well">Sorry, there are no posts at the moment</p>
-	 <% end %>
+		<%= render 'follow_form' if signed_in? %>
+		<%= render 'shared/feed' %>
 	</div>
 </div>
 

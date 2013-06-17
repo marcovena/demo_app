@@ -1,6 +1,6 @@
 <!--  _follow.html.erb -->
 <%= form_for(current_user.relationships.build(followed_id: @user.id)) do |f| %>
 <div><%= f.hidden_field :followed_id %></div>
-<%= f.submit "Follow", class: "btn btn-large btn-primary" %>
+<%= f.submit "Follow #{@user.name}", class: "btn btn-large btn-primary" %>
 <% end %>
 

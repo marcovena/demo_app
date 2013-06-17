@@ -33,10 +33,14 @@ $veryLightGray: #f7f7f7;
 	position:relative;
 	width:90%;
 	@include drop-shadow(1px,1px,5px);
-
 	
 }
 
+@mixin border-radius($radius: 5px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
 
 
 
@@ -298,6 +302,8 @@ h1.user-name-info{
 	border: 1px solid #eeeeee;
 	padding: 5px 8px;
 	margin-top:10px;
+
+	@include border-radius(10px);
 	a{
 		font-style: italic;
 		padding: 5px 10px;
@@ -316,9 +322,53 @@ h1.user-name-info{
 			background-color: darken($veryLightGray, 5%);
 		}
 	}
+}
 
+// FOLLOWERS - FOLLOWING
+.users-list {
+	
+	list-style-type: none;
+	margin: 10px 0;
+
+	li{
+		
+		padding: 10px 0;
+		
+		border-top: 1px dashed $grayLighter;
+		margin: 5px 0;
+
+
+		h1 {margin-top: 0;}
+
+		&:first-child
+		{ border-top: none;
+		}
+
+		&:after{ 
+			@extend .clearfix;
+		}
+
+		
+	}
 
 }
+
+#avatars-container{
+	width:99%;
+
+}
+.user-avatars {
+	margin: 30px 15px;
+	.gravatar {
+		width: auto;
+		min-width:24px;
+
+		height: auto;
+		min-height:24px;
+		padding: 1px;
+	}
+}
+
 
 
 

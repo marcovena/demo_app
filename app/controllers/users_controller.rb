@@ -58,14 +58,16 @@ end
 #FOLLOWERS - FOLLOWING
 def followers
   @user = User.find(params[:id])
-  @followers = @user.followers
+  @friends = @user.followers.paginate(page: params[:page])
   @title = 'People following ' + @user.name
+  render 'friends'
 end
 
 def following #followed_people
   @user = User.find(params[:id])
-  @followed_users = @user.followed_users
+  @friends = @user.followed_users.paginate(page: params[:page])
   @title = 'People followed by ' + @user.name
+  render 'friends'
 end
 
 

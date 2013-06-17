@@ -1,0 +1,34 @@
+<% provide(:title, @title) %>
+<div class="row">
+	<aside class="span4">
+		<section><%= render 'shared/user_info' , user: @user %> </section>
+		<section><%= render 'shared/stats' %></section>
+		<section id="avatars-container">
+			<div class="user-avatars">
+				<% if @friends.any? %>
+					<% @friends.each do |friend| %>
+					<%= link_to gravatar_for(friend, size: 25), friend %>
+					<% end %>
+				<% end %>
+			</div>
+		</section>
+	</aside>
+	<div class="span8">
+		<%= render 'follow_form' if signed_in? %>
+		<!-- List of followers -->
+		<% if @friends.any? %>
+		<%= will_paginate @friends %>
+		<ul class="users-list">
+			<% @friends.each do |friend| %>
+			<li class="user-item">
+				<%=  render 'shared/user_info', user: friend %>
+			</li>
+			<% end %>
+		</ul>
+		<%= will_paginate @friends %>
+		<% else %>
+		<p class="well">NO USERS TO BE LISTED</p>
+		<% end %>
+	</div>
+</div>
+

@@ -1,6 +1,6 @@
 <a href='<%=user_path(user) %>'>
 	<%= gravatar_for user  %>
 </a>
-<h1 class="user-name-info"><%= user.name %></h1>
-<span class="user-profile-link"><%= link_to "View my profile" , user%></span>
+<h1 class="user-name-info"><%= user.name %></h1> 
+<span class="user-profile-link"><%= link_to "View my profile" , user %></span>
 <span class="user-profile-count"><%= pluralize(user.microposts.count, "micropost") %></span>

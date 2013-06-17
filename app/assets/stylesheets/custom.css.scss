@@ -1,7 +1,11 @@
 @import "bootstrap";
 
+
+
 /************* $VARIABLES */
 $grayMediumLight: #eaeaea;
+$veryLightGray: #f7f7f7;
+
 /************* $mixins */
 @mixin box_sizing{
 	-moz-box-sizing: border-box;
@@ -9,10 +13,10 @@ $grayMediumLight: #eaeaea;
 	box-sizing: border-box;
 }
 
-@mixin drop-shadow{
-	-webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.7);
-	-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.7);
-	box-shadow:0 1px 5px rgba(0, 0, 0, 0.7);	
+@mixin drop-shadow($left,$down, $blur) {
+	-webkit-box-shadow:$left $down $blur rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:$left $down $blur rgba(0, 0, 0, 0.3);
+	box-shadow:$left $down $blur rgba(0, 0, 0, 0.3);	
 }
 
 @mixin rotate($degrees) {
@@ -28,7 +32,7 @@ $grayMediumLight: #eaeaea;
 .drop-shadow {
 	position:relative;
 	width:90%;
-	@include drop-shadow;
+	@include drop-shadow(1px,1px,5px);
 
 	
 }
@@ -168,7 +172,8 @@ input {height: auto !important;}
 }
 
 h1.user-name-info{
-	font-size:1.2em;	
+	font-size:1.2em;
+	margin-bottom: 7px;	
 }
 
 .user-profile-link{
@@ -236,7 +241,9 @@ h1.user-name-info{
 			position:relative;
 			max-width: 40%;
 			white-space: no-wrap;
-
+			
+			@include drop-shadow(-1px,0,1px);
+			@include drop-shadow(0,1px,1px);
 
 			&:after{
 				content: "";
@@ -266,7 +273,7 @@ h1.user-name-info{
 		position: absolute;
 		bottom: 40px;
 		right: 10px;
-		color: rgba(170, 170, 170, 0.5);
+		color: $veryLightGray;
 		font-size: 49pt;
 	}
 
@@ -284,4 +291,34 @@ h1.user-name-info{
 		}
 	}
 }
+
+/* sidebar */
+.stats{
+	background-color: $veryLightGray;
+	border: 1px solid #eeeeee;
+	padding: 5px 8px;
+	margin-top:10px;
+	a{
+		font-style: italic;
+		padding: 5px 10px;
+		display: block;
+
+
+		&:first-child{
+
+			border-bottom: 1px solid $grayLighter;
+
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $blue;
+			background-color: darken($veryLightGray, 5%);
+		}
+	}
+
+
+}
+
+
 

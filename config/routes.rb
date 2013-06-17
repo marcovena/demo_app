@@ -13,7 +13,12 @@ DemoApp::Application.routes.draw do
   match '/signout' , to: 'sessions#destroy' , via: :delete
 
   resources :microposts , only: [:create, :destroy]
-  resources :users
+  resources :users do
+    member do
+      get :followers,      #GET user/5/followers   followers_user_path(5),  followers_url
+      :following      #GET user/5/following    following_user_path(5)
+    end
+  end
   resources :sessions, only: [:new, :create, :destroy]
 
 

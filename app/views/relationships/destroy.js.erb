@@ -1,0 +1,5 @@
+//destroy.js.erb
+
+//get the form
+$('#follow-form').html("<%= escape_javascript(render('users/follow')) %> ");
+$('#followers').html('<%= @user.followers.count %>');
